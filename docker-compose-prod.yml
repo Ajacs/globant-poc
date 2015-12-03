@@ -1,0 +1,13 @@
+jhipster-prod-mysql:
+  container_name: monarc_poc-prod-mysql
+  image: mysql:5.7.9
+  # volumes:
+  # - ~/volumes/jhipster/monarc_poc/prod-mysql/:/var/lib/mysql/
+  environment:
+  - MYSQL_USER=root
+  - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+  - MYSQL_DATABASE=monarc_poc
+  ports:
+  - "3306:3306"
+  command: mysqld --lower_case_table_names=1
+
