@@ -19,6 +19,13 @@ We use [Grunt][] as our build system. Install the grunt command-line tool global
 Run the following commands in two separate terminals to create a blissful development experience where your browser
 auto-refreshes when files change on your hard drive.
 
+If you use linux , you can install mvn with the following commands:
+
+    sudo apt-get purge maven maven2 maven3
+    sudo apt-add-repository ppa:andrei-pozolotin/maven3
+    sudo apt-get update
+    sudo apt-get install maven3
+
     mvn
     grunt
 
